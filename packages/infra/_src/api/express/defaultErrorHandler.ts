@@ -6,9 +6,9 @@ import type {
   OptimisticConcurrencyException,
   UnauthorizedError,
   ValidationError
-} from "../errors.js"
-import type { RequestContext } from "../RequestContext.js"
-import { logRequestError } from "./reportError.js"
+} from "../../errors.js"
+import type { RequestContext } from "../../RequestContext.js"
+import { logRequestError } from "../reportError.js"
 
 export function defaultBasicErrorHandler<R>(
   _req: express.Request,
