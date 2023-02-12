@@ -6,3 +6,5 @@ export * as Parser from "./custom/Parser.js"
 export * as These from "./custom/These.js"
 
 export * from "./custom.js"
+
+export * as Zod from "./zod/index.js"

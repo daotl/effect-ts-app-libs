@@ -25,6 +25,13 @@ export type Parser<I, E, A> = {
   (u: I, env?: ParserEnv): T.These<E, A>
 }
 
+/**
+ * Effectify a Parser with error possibly handled/mapped.
+ */
+export type Effectify<E1 = any, E2 = E1> = <X, A>(
+  self: Parser<X, E1, A>
+) => (a: X, env?: ParserEnv) => Effect<never, E2, A>
+
 export const interpreters: ((
   schema: SchemaAny
 ) => Option<() => Parser<unknown, unknown, unknown>>)[] = [
@@ -123,7 +130,7 @@ export const interpreters: ((
 
 const cache = new WeakMap()
 
-function parserFor<ParserInput, ParsedShape, ConstructorInput, Encoded, Api>(
+const parserFor = function<ParserInput, ParsedShape, ConstructorInput, Encoded, Api>(
   schema: Schema<ParserInput, ParsedShape, ConstructorInput, Encoded, Api>
 ): Parser<ParserInput, any, ParsedShape> {
   if (cache.has(schema)) {
