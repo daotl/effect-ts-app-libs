@@ -6,13 +6,13 @@
   "dependencies": {
     "@azure/cosmos": "^3.17.2",
     "@azure/service-bus": "^7.8.0",
-    "@effect-app/prelude": "workspace:*",
     "@effect-app/core": "workspace:*",
     "@effect-app/infra-adapters": "workspace:*",
+    "@effect-app/prelude": "workspace:*",
     "@effect-app/schema": "workspace:*",
+    "@effect/data": "^0.1.2",
     "@effect/io": "^0.1.12",
     "@fp-ts/core": "^0.2.1",
-    "@effect/data": "^0.1.2",
     "@sendgrid/helpers": "^7.7.0",
     "@sendgrid/mail": "^7.7.0",
     "change-case": "^4.1.2",
@@ -28,6 +28,7 @@
   "devDependencies": {
     "@babel/cli": "^7.20.7",
     "@effect-app/compiler": "workspace:*",
+    "@fastify/cookie": "^8.3.0",
     "@sentry/node": "^7.37.2",
     "@types/express": "^4.17.17",
     "@types/node": "~18.13.0",
@@ -37,13 +38,15 @@
     "express": "^4.18.2",
     "express-jwt": "^8.4.1",
     "express-jwt-authz": "^2.4.1",
+    "fastify": "^4.13.0",
     "jwks-rsa": "2.1.4",
     "jwt-decode": "^3.1.2",
     "mongodb": "5.0.1",
     "redis": "^3.1.2",
     "ts-node": "^10.9.1",
     "typescript": "https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.170/compiler/typescript.tgz",
-    "vitest": "^0.28.5"
+    "vitest": "^0.28.5",
+    "zod": "^3.20.6"
   },
   "typesVersions": {
     "*": {
@@ -191,6 +194,36 @@
       "require": {
         "types": "./dist/api/express/schema/routing.d.ts",
         "default": "./_cjs/api/express/schema/routing.cjs"
+      }
+    },
+    "./api/fastify/defaultErrorHandler": {
+      "import": {
+        "types": "./dist/api/fastify/defaultErrorHandler.d.ts",
+        "default": "./dist/api/fastify/defaultErrorHandler.js"
+      },
+      "require": {
+        "types": "./dist/api/fastify/defaultErrorHandler.d.ts",
+        "default": "./_cjs/api/fastify/defaultErrorHandler.cjs"
+      }
+    },
+    "./api/fastify/routing": {
+      "import": {
+        "types": "./dist/api/fastify/routing.d.ts",
+        "default": "./dist/api/fastify/routing.js"
+      },
+      "require": {
+        "types": "./dist/api/fastify/routing.d.ts",
+        "default": "./_cjs/api/fastify/routing.cjs"
+      }
+    },
+    "./api/fastify/schema-zod/requestHandler": {
+      "import": {
+        "types": "./dist/api/fastify/schema-zod/requestHandler.d.ts",
+        "default": "./dist/api/fastify/schema-zod/requestHandler.js"
+      },
+      "require": {
+        "types": "./dist/api/fastify/schema-zod/requestHandler.d.ts",
+        "default": "./_cjs/api/fastify/schema-zod/requestHandler.cjs"
       }
     },
     "./api/reportError": {
