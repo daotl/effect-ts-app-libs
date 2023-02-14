@@ -12,6 +12,7 @@
     "cross-fetch": "^3.1.5",
     "lodash": "^4.17.21",
     "path-parser": "^6.1.0",
+    "typia": "^3.4.28",
     "uuid": "^9.0.0",
     "validator": "^13.9.0"
   },
@@ -21,7 +22,8 @@
     "fast-check": "^3.6.3",
     "ts-toolbelt": "^9.6.0",
     "typescript": "https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.170/compiler/typescript.tgz",
-    "vitest": "^0.28.5"
+    "vitest": "^0.28.5",
+    "zod": "^3.20.6"
   },
   "scripts": {
     "watch": "pnpm build:tsc -w",
@@ -902,6 +904,46 @@
       "require": {
         "types": "./dist/vendor.d.ts",
         "default": "./_cjs/vendor.cjs"
+      }
+    },
+    "./zod/_condemn": {
+      "import": {
+        "types": "./dist/zod/_condemn.d.ts",
+        "default": "./dist/zod/_condemn.js"
+      },
+      "require": {
+        "types": "./dist/zod/_condemn.d.ts",
+        "default": "./_cjs/zod/_condemn.cjs"
+      }
+    },
+    "./zod/_parser": {
+      "import": {
+        "types": "./dist/zod/_parser.d.ts",
+        "default": "./dist/zod/_parser.js"
+      },
+      "require": {
+        "types": "./dist/zod/_parser.d.ts",
+        "default": "./_cjs/zod/_parser.cjs"
+      }
+    },
+    "./zod/_types": {
+      "import": {
+        "types": "./dist/zod/_types.d.ts",
+        "default": "./dist/zod/_types.js"
+      },
+      "require": {
+        "types": "./dist/zod/_types.d.ts",
+        "default": "./_cjs/zod/_types.cjs"
+      }
+    },
+    "./zod/index": {
+      "import": {
+        "types": "./dist/zod/index.d.ts",
+        "default": "./dist/zod/index.js"
+      },
+      "require": {
+        "types": "./dist/zod/index.d.ts",
+        "default": "./_cjs/zod/index.cjs"
       }
     }
   },

@@ -494,9 +494,11 @@ importers:
       path-parser: ^6.1.0
       ts-toolbelt: ^9.6.0
       typescript: https://cdn.jsdelivr.net/npm/@tsplus/installer@0.0.170/compiler/typescript.tgz
+      typia: ^3.4.28
       uuid: ^9.0.0
       validator: ^13.9.0
       vitest: ^0.28.5
+      zod: ^3.20.6
     dependencies:
       '@effect-app/core': link:../core
       '@effect/data': 0.1.2
@@ -506,6 +508,7 @@ importers:
       cross-fetch: 3.1.5
       lodash: 4.17.21
       path-parser: 6.1.0
+      typia: 3.4.28_gmyzgtbobtwqxr3kpifzlndcxy
       uuid: 9.0.0
       validator: 13.9.0
     devDependencies:
@@ -515,6 +518,7 @@ importers:
       ts-toolbelt: 9.6.0
       typescript: '@cdn.jsdelivr.net/npm/@tsplus/installer@0.0.170/compiler/typescript.tgz_3fpnb3exznmanjmuxoeacxgduu'
       vitest: 0.28.5
+      zod: 3.20.6
 
   packages/vue:
     specifiers:
@@ -3015,7 +3019,7 @@ packages:
     dev: true
 
   /check-error/1.0.2:
-    resolution: {integrity: sha512-BrgHpW9NURQgzoNyjfq0Wu6VFO6D7IZEmJNdtgNqpzGG8RuNFHt2jQxWlAs4HMe119chBnv+34syEZtc6IhLtA==}
+    resolution: {integrity: sha1-V00xLt2Iu13YkS6Sht1sCu1KrII=}
     dev: true
 
   /chokidar/3.5.3:
@@ -4705,7 +4709,7 @@ packages:
     dev: true
 
   /get-func-name/2.0.0:
-    resolution: {integrity: sha512-Hm0ixYtaSZ/V7C8FJrtZIuBBI+iSgL+1Aq82zSu8VQNB4S3Gk8e7Qs3VwBDJAhmRZcFqkl3tQu36g/Foh5I5ig==}
+    resolution: {integrity: sha1-6td0q+5y4gQJQzoGY2YCPdaIekE=}
     dev: true
 
   /get-intrinsic/1.1.3:
@@ -7324,7 +7328,7 @@ packages:
     dev: true
 
   /requires-port/1.0.0:
-    resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
+    resolution: {integrity: sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=}
     dev: false
 
   /resolve-alpn/1.2.1:
@@ -7778,7 +7782,7 @@ packages:
       escape-string-regexp: 2.0.0
 
   /stackback/0.0.2:
-    resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
+    resolution: {integrity: sha1-Gsig2Ug4SNFpXkGLbQMaPDzmjjs=}
     dev: true
 
   /statuses/1.5.0:
@@ -8301,6 +8305,16 @@ packages:
       minimatch: 3.1.2
       typescript: '@cdn.jsdelivr.net/npm/@tsplus/installer@0.0.170/compiler/typescript.tgz_3fpnb3exznmanjmuxoeacxgduu'
     dev: true
+
+  /typia/3.4.28_gmyzgtbobtwqxr3kpifzlndcxy:
+    resolution: {integrity: sha512-Le5S3JWMr/2YNIU71PfaD2HtLbVGz/BAVLRPN8T29ABN3aeTWNcCcKyNMbu6nyC020oLxkg5+1kdHT1M0jgvGA==}
+    hasBin: true
+    peerDependencies:
+      ttypescript: '>= 1.5.15'
+      typescript: '>= 4.5.2'
+    dependencies:
+      typescript: '@cdn.jsdelivr.net/npm/@tsplus/installer@0.0.170/compiler/typescript.tgz_3fpnb3exznmanjmuxoeacxgduu'
+    dev: false
 
   /ufo/1.0.1:
     resolution: {integrity: sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==}
@@ -8879,6 +8893,10 @@ packages:
   /zlib/1.0.5:
     resolution: {integrity: sha512-40fpE2II+Cd3k8HWTWONfeKE2jL+P42iWJ1zzps5W51qcTsOUKM5Q5m2PFb0CLxlmFAaUuUdJGc3OfZy947v0w==}
     engines: {node: '>=0.2.0'}
+    dev: true
+
+  /zod/3.20.6:
+    resolution: {integrity: sha512-oyu0m54SGCtzh6EClBVqDDlAYRz4jrVtKwQ7ZnsEmMI9HnzuZFj8QFwAY1M5uniIYACdGvv0PBWPF2kO0aNofA==}
     dev: true
 
   '@cdn.jsdelivr.net/npm/@tsplus/installer@0.0.170/compiler/typescript.tgz_3fpnb3exznmanjmuxoeacxgduu':
